@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Shelter</title>
+    <link rel="stylesheet" href="dog.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Dog Shelter</h1>
+        <p>Your new furry friend is waiting for you!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#adopt">Adopt a Dog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="image">
+        <img src="doggy.cms" alt="Cute dog">
+    </section>
+
+    <section id="form">
+        <h2>Adopt a Dog</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10 digits number">
+
+            <label for="dog-breed">Preferred Dog Breed:</label>
+            <select id="dog-breed" name="dog-breed">
+                <option value="indian-dog">Indian Dog</option>
+                <option value="labrador">Labrador</option>
+                <option value="german-shepherd">German Shepherd</option>
+                <option value="golden-retriever">Golden Retriever</option>
+                <option value="beagle">Beagle</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message or Additional Information:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your preferences or ask any questions"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dog Shelter. All rights reserved.</p>
+    </footer>
+</body>
+</html>
